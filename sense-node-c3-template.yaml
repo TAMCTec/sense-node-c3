@@ -10,7 +10,7 @@ esphome:
   # This will allow for (future) project identification,
   # configuration and updates.
   project:
-    name: sense-node-c3-template
+    name: tamctec.sense-node-c3-template
     version: "1.0"
   platformio_options: 
     board_build.arduino.upstream_packages: []
