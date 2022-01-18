@@ -27,22 +27,9 @@ esp32:
   framework:
     type: arduino
 
-# To be able to get logs from the device via serial and api.
-logger:
-
-# API is a requirement of the dashboard import.
-api:
-
-# OTA is required for Over-the-Air updating
-ota:
-
 # This should point to the public location of this yaml file.
 dashboard_import:
   package_import_url: github://tamctec/sense-node-c3/sense-node-c3-template.yaml@main
-
-# In combination with the `ap` this allows the user
-# to provision wifi credentials to the device.
-captive_portal:
 
 light:
   - platform: neopixelbus
