@@ -1,6 +1,7 @@
 # These substitutions allow the end user to override certain values
 substitutions:
   name: "sense-node-c3-template"
+  upper_name: "Sense Node C3 Template"
 
 esphome:
   name: "${name}"
@@ -53,12 +54,12 @@ light:
     variant: WS2812
     pin: 8
     num_leds: 1
-    name: "Sense Node C3 Status"
+    name: "${upper_name} Status"
 
 sensor:
   - platform: adc
     pin: 0
-    name: "Sense Node C3 Battery Voltage"
+    name: "${upper_name} Battery Voltage"
     attenuation: 11db
     update_interval: 1s
     filters:
