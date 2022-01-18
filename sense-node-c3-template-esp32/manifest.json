@@ -1,0 +1,21 @@
+{
+  "chipFamily": "ESP32C3",
+  "parts": [
+    {
+      "path": "sense-node-c3-template-esp32/firmware.bin",
+      "offset": 65536
+    },
+    {
+      "path": "sense-node-c3-template-esp32/bootloader_qio_80m.bin",
+      "offset": 0
+    },
+    {
+      "path": "sense-node-c3-template-esp32/partitions.bin",
+      "offset": 32768
+    },
+    {
+      "path": "sense-node-c3-template-esp32/boot_app0.bin",
+      "offset": 57344
+    }
+  ]
+}

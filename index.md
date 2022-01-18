@@ -1,6 +1,6 @@
 # About
 
-Add some information about your project here.
+Sense Node C3 is a universal sense node base on ESP32 C3
 
 # Installation
 
