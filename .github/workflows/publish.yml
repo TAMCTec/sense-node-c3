@@ -9,5 +9,7 @@ jobs:
   build:
     uses: esphome/workflows/.github/workflows/publish.yml@main
     with:
+      # CHANGEME: Set the filenames of your config files here:
       files: sense-node-c3-template.yaml
+      # CHANGEME: Set the name of your project here:
       name: Sense Node C3 Template

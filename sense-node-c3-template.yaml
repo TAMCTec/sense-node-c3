@@ -5,11 +5,11 @@ substitutions:
 esphome:
   name: "${name}"
   platformio_options: 
-  board_build.arduino.upstream_packages: []
-  platform_packages:
-    - framework-arduinoespressif32 @ https://github.com/espressif/arduino-esp32.git#2.0.1
-  platform:
-    - https://github.com/platformio/platform-espressif32.git#feature/arduino-upstream
+    board_build.arduino.upstream_packages: []
+    platform_packages:
+      - framework-arduinoespressif32 @ https://github.com/espressif/arduino-esp32.git#2.0.1
+    platform:
+      - https://github.com/platformio/platform-espressif32.git#feature/arduino-upstream
 
   # Automatically add the mac address to the name
   # so you can use a single firmware for all devices
