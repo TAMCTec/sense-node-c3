@@ -1,4 +1,4 @@
 # CHANGEME: Set these variable to your liking
-title: ESPHome Project Template
-description: Powered by ESPHome and ESP Web Tools
+title: Sense Node C3 Template
+description: Sense Node C3 is a universal sense node base on ESP32 C3
 theme: jekyll-theme-slate
