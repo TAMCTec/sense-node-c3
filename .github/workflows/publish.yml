@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    uses: tamctec/workflows/.github/workflows/publish.yml@main
+    uses: esphome/workflows/.github/workflows/publish.yml@main
     with:
       files: sense-node-c3-template.yaml
       name: Sense Node C3 Template
