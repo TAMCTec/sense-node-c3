@@ -46,11 +46,11 @@ captive_portal:
 
 light:
   - platform: neopixelbus
-  type: GRB
-  variant: WS2812
-  pin: 8
-  num_leds: 1
-  name: "Sense Node C3 Status"
+    type: GRB
+    variant: WS2812
+    pin: 8
+    num_leds: 1
+    name: "Sense Node C3 Status"
 
 sensor:
   - platform: adc
