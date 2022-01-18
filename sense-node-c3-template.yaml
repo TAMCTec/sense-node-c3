@@ -4,6 +4,14 @@ substitutions:
 
 esphome:
   name: "${name}"
+  # Automatically add the mac address to the name
+  # so you can use a single firmware for all devices
+  name_add_mac_suffix: true
+  # This will allow for (future) project identification,
+  # configuration and updates.
+  project:
+    name: sense-node-c3-template
+    version: "1.0"
   platformio_options: 
     board_build.arduino.upstream_packages: []
     platform_packages:
@@ -11,25 +19,33 @@ esphome:
     platform:
       - https://github.com/platformio/platform-espressif32.git#feature/arduino-upstream
 
-  # Automatically add the mac address to the name
-  # so you can use a single firmware for all devices
-  name_add_mac_suffix: true
-
-  # This will allow for (future) project identification,
-  # configuration and updates.
-  project:
-    name: sense-node-c3-template
-    version: "1.0"
-
 esp32:
   board: esp32-c3-devkitm-1
   variant: ESP32C3
   framework:
     type: arduino
 
+# To be able to get logs from the device via serial and api.
+logger:
+
+# API is a requirement of the dashboard import.
+api:
+
+# OTA is required for Over-the-Air updating
+ota:
+
 # This should point to the public location of this yaml file.
 dashboard_import:
   package_import_url: github://tamctec/sense-node-c3/sense-node-c3-template.yaml@main
+
+wifi:
+  # Set up a wifi access point using the device name above
+  ap:
+    password: "12345678"
+
+# In combination with the `ap` this allows the user
+# to provision wifi credentials to the device.
+captive_portal:
 
 light:
   - platform: neopixelbus
